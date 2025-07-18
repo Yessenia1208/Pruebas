@@ -33,8 +33,6 @@
     module.exports = {
         suma,
         esPar,
-        dividir,
-        obtenerIniciales,
-        formatearFecha
+        dividir
     }
 

@@ -1,4 +1,4 @@
-const { suma, esPar, dividir, obtenerIniciales, formatearFecha } = require('./funciones'); // Asegúrate de que la ruta sea correcta
+const { suma, esPar, dividir } = require('./funciones');
 
 describe('Pruebas de las funciones', () => {
     
@@ -22,18 +22,6 @@ describe('Pruebas de las funciones', () => {
     test('dividir: Devuelve el resultado de la división', () => {
         expect(dividir(10, 2)).toBe(5);
         expect(dividir(9, 3)).toBe(3);
-    });
-
-    test('obtenerIniciales: Devuelve las iniciales del nombre completo', () => {
-        expect(obtenerIniciales("Yessenia Vazquez")).toBe('YV');
-        expect(obtenerIniciales("Mariana Herrera")).toBe('MH');
-        expect(obtenerIniciales("Ana")).toBe('A');
-    });
-
-    test('formatearFecha: Devuelve la fecha en formato DD/MM/YYYY', () => {
-        expect(formatearFecha("2020-02-18")).toBe('18/02/2020');
-        expect(formatearFecha("01-01-2022")).toBe('01/01/2022');
-        expect(formatearFecha("2025-01-04")).toBe('04/01/2025');
     });
 
 });
